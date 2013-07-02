@@ -1,7 +1,4 @@
 <?php
-/**
- * Browse, install, update, and uninstall WP-CLI community packages.
- */
 use \Composer\Factory;
 use \Composer\IO\NullIO;
 use \Composer\Json\JsonFile;
@@ -11,6 +8,9 @@ use \Composer\Repository;
 use \Composer\Repository\RepositoryManager;
 use \Composer\Util\Filesystem;
 
+/**
+ * Browse, install, update, and uninstall WP-CLI community packages.
+ */
 class WP_CLI_Package_Command extends WP_CLI_Command {
 
 	private $fields = array(
